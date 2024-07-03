@@ -1,4 +1,4 @@
-package mconst.rpg.account;
+package mconst.rpg.accounts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

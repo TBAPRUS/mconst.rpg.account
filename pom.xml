@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>mconst.rpg</groupId>
-	<artifactId>account</artifactId>
+	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>account</name>
 	<description>Account service for RPG</description>
@@ -71,34 +71,34 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.jooq</groupId>
-				<artifactId>jooq-codegen-maven</artifactId>
+<!--			<plugin>-->
+<!--				<groupId>org.jooq</groupId>-->
+<!--				<artifactId>jooq-codegen-maven</artifactId>-->
 
-				<executions>
-					<execution>
-						<id>jooq-codegen</id>
-						<phase>generate-sources</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-						<configuration>
-							<jdbc>
-								<driver>org.postgresql.Driver</driver>
-								<url>jdbc:postgresql://localhost:5432/db</url>
-								<user>admin</user>
-								<password>secretpassword123</password>
-							</jdbc>
-							<generator>
-								<target>
-									<packageName>com.baeldung.jooq.introduction.db</packageName>
-									<directory>src/main/java</directory>
-								</target>
-							</generator>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>jooq-codegen</id>-->
+<!--						<phase>generate-sources</phase>-->
+<!--						<goals>-->
+<!--							<goal>generate</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<jdbc>-->
+<!--								<driver>org.postgresql.Driver</driver>-->
+<!--								<url>jdbc:postgresql://localhost:5432/db</url>-->
+<!--								<user>admin</user>-->
+<!--								<password>secretpassword123</password>-->
+<!--							</jdbc>-->
+<!--							<generator>-->
+<!--								<target>-->
+<!--									<packageName>com.baeldung.jooq.introduction.db</packageName>-->
+<!--									<directory>src/main/java</directory>-->
+<!--								</target>-->
+<!--							</generator>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
